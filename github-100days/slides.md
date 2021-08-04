@@ -1,0 +1,60 @@
+---
+theme: default
+highlighter: shiki
+title: '1日1コードのすゝめ - 111日間毎日プログラムを書く方法と結果'
+colorSchema: 'dark'
+---
+
+# 1日1コードのすゝめ
+
+111日間毎日プログラムを書く方法と結果
+
+
+---
+
+# 自己紹介
+
+
+<div class="flex">
+<div class="flex-grow">
+
+## <img src="https://avatars.githubusercontent.com/u/51394682?v=4" height="1832" width="1832" style="height: 1.5em; width: auto; display: inline-block; border-radius: 100%" /> 石川琉聖
+<br />
+
+- サイバーセキュリティ研究室 **3**回生
+- アルゴリズムとセキュリティに興味があります
+  - AtCoder <span style="color:lightblue">**水色**</span> / CodeForces <span style="color:#6495ed">**青色**</span>
+  - Seccamp'19 暗号化通信ゼミ
+  - SecHack365'20 研究駆動コース
+- ポートフォリオサイト <mdi-arrow-right-bold-outline /> [https://xryuseix.github.io](https://xryuseix.github.io)
+- アカウント <mdi-arrow-right-bold-outline /> <span class="text-twitter">[<carbon-logo-twitter />@ryusei_ishika](https://twitter.com/ryusei_ishika)</span> / [<carbon-logo-github /> xryuseix](https://github.com/xryuseix)
+- 研究(してた)テーマ
+  - 競プロのプログラムの盗作検知
+  - Zoomのバーチャル背景適用動画から部屋の復元
+
+</div>
+
+<div class="flex-grow">
+
+## 好きな○○
+<br />
+
+- 言語 <mdi-arrow-right-bold-outline /> C++, Rust, Python
+  - 基本的に静的型付け言語がいいです
+<img src="https://camo.githubusercontent.com/f9e2745dcf64632c35e51270bc76ed43b999d3b51bafda646380b4641f518fc8/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d7872797573656978266c61796f75743d636f6d70616374266c616e67735f636f756e743d38266578636c7564655f7265706f3d53412d506c61672c4174436f6465725f4261636b75702c5365634861636b3336352d446174617365742c26686964653d68746d6c2c4d616b6566696c652c6373732c5465782c434d616b652c53435353267468656d653d746f6b796f6e69676874" style="height:10em">
+- エディタ <mdi-arrow-right-bold-outline /> VSCode
+- OS <mdi-arrow-right-bold-outline /> macOS
+- データ構造 <mdi-arrow-right-bold-outline /> Segment Tree
+- キーボード <mdi-arrow-right-bold-outline /> REALFORCE
+
+</div>
+</div>
+
+
+---
+
+# 今回話すこと
+
+- 111日間でできた成果物
+- 毎日プログラムを書くコツ
+- 成果物以外に得られたこと

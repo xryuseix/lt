@@ -1,0 +1,10 @@
+/** @format */
+
+#slide-content {
+  @apply text-white bg-off-black;
+  font-family: "Kiwi Maru", serif;
+}
+
+svg {
+  display: inline-block;
+}
