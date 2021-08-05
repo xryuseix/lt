@@ -54,7 +54,58 @@ colorSchema: 'dark'
 
 # 今回話すこと
 
+<div class="flex">
+
+<div class="flex-grow">
+<br />
+
+<carbon-logo-github />GitHubで111日間コードを書き続けました．  
+そこで...
+
 1. 111日間でできた成果物
-2. 毎日プログラムを書くコツ
+2. 毎日プログラムを書き続けるコツ
 3. 成果物以外に得られたこと
+</div>
+<div class="flex-grow">
+  <div class="image">
+    <img src="/github_grass.png" />
+  </div>
+  <div class="image">
+    <img src="/github_streak.png" />
+  </div>
+</div>
+</div>
+
+<style>
+.image {
+  margin-bottom:20px;
+}
+</style>
+
+---
+
+# (1) 111日間でできた成果物
+
+* 自分のポートフォリオサイトの機能開発とリファクタリング (<logos-javascript /> <logos-react /> <logos-gatsby />)
+* 競プロ用ストレステストツール (<logos-rust style="background:white"/>)
+* フィッシングサイト判定chrome拡張 (<logos-python /> <logos-javascript />)
+* 自宅用監視カメラ (<logos-python /> <logos-opencv />)
+* 仕事用業務効率化ツール (<logos-rust style="background:white"/>)
+* 文章構成ツール (<logos-python />)
+* Spotify cliツール (<logos-python />)
+* 暗号化ツール (<logos-rust style="background:white"/>)
+* zoomのバーチャル背景を剥がすツール (<logos-c-plusplus /> <logos-python /> <logos-opencv />)
+* ReDoSやられサイト(CTF用) (<logos-python /> <logos-flask style="background:white" />)
+* その他，いくつかのレポジトリのリファクタリングとドキュメント作成
+* ...
+
+<div>とにかくいっぱいできました！！！！</div>
+
+<style>
+div {
+  text-align:center;
+  font-size:2.5em;
+  font-weight: bold;
+}
+</style>
 
