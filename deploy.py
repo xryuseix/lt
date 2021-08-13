@@ -46,12 +46,13 @@ def cp(from_path: str, to_path: str):
 
 
 def rm(path: str):
-    if os.path.isdir(path):
-        shutil.rmtree(path)
-        assert not os.path.exists(path)
-    else:
-        os.remove(path)
-        assert not os.path.exists(path)
+    if os.path.exists(path):
+        if os.path.isdir(path):
+            shutil.rmtree(path)
+            assert not os.path.exists(path)
+        else:
+            os.remove(path)
+            assert not os.path.exists(path)
 
 
 ### ファイルIO ###
