@@ -111,7 +111,7 @@ def main():
         replace_content_in_file(f"{pwd()}/index.html", [('href="/', 'href="./'), ('src="/', 'src="./')])
         # assets/vender??????????.js の画像ファイル
         patterns = [
-            (f'[wr("img",{{src:"/{image}"}})]', f'[wr("img",{{src:"./{folder}/{image}"}})]')
+            (f'[wr("img",{{src:"/{image}"', f'[wr("img",{{src:"./{folder}/{image}"')
             for image in [
                 image for image in ls(pwd()) if image[-3:] in ["png", "jpg", "gif"]
             ]
