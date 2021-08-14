@@ -7,16 +7,16 @@ from distutils.dir_util import copy_tree
 
 
 def mv(from_path: str, to_path: str):
-    assert os.path.exists(from_path)
-    assert os.path.exists(to_path)
+    assert os.path.exists(from_path), f"[ERROR] {from_path} is not found"
+    assert os.path.exists(to_path), f"[ERROR] {to_path} is not found"
     new_path = shutil.move(from_path, to_path)
     return new_path
 
 
 def mkdir(path: str):
     os.makedirs(path, exist_ok=True)
-    assert os.path.exists(path)
-    assert os.path.isdir(path)
+    assert os.path.exists(path), f"[ERROR] {path} is not found"
+    assert os.path.isdir(path), f"[ERROR] {path} is not dir"
 
 
 def ls(path: str):  # -> list:
@@ -34,25 +34,25 @@ def cd(path: str):
 
 
 def cp(from_path: str, to_path: str):
-    assert os.path.exists(from_path)
+    assert os.path.exists(from_path), f"[ERROR] {from_path} is not found"
     if os.path.isdir(from_path):
         copy_tree(from_path, to_path)
-        assert os.path.exists(to_path)
-        assert os.path.isdir(to_path)
+        assert os.path.exists(to_path), f"[ERROR] {to_path} is not found"
+        assert os.path.isdir(to_path), f"[ERROR] {to_path} is not dir"
     else:
         shutil.copyfile(from_path, to_path)
-        assert os.path.exists(to_path)
-        assert os.path.isfile(to_path)
+        assert os.path.exists(to_path), f"[ERROR] {to_path} is not found"
+        assert os.path.isfile(to_path), f"[ERROR] {to_path} is not dir"
 
 
 def rm(path: str):
     if os.path.exists(path):
         if os.path.isdir(path):
             shutil.rmtree(path)
-            assert not os.path.exists(path)
+            assert not os.path.exists(path), f"[ERROR] {path} is not found"
         else:
             os.remove(path)
-            assert not os.path.exists(path)
+            assert not os.path.exists(path), f"[ERROR] {path} is not found"
 
 
 ### ファイルIO ###
@@ -61,8 +61,8 @@ def rm(path: str):
 def write_file(path: str, content: str):
     with open(path, mode="w") as f:
         f.write(content)
-    assert os.path.exists(path)
-    assert os.path.isfile(path)
+    assert os.path.exists(path), f"[ERROR] {path} is not found"
+    assert os.path.isfile(path), f"[ERROR] {path} is not file"
 
 
 def read_file(path: str):
@@ -122,7 +122,7 @@ def main():
             for file in ls(pwd())
             if os.path.isfile(file) and file[0:7] == "vendor." and file[-3:] == ".js"
         ]
-        assert len(vendor_file_name) == 1 and os.path.exists(vendor_file_name[0])
+        assert len(vendor_file_name) == 1 and os.path.exists(vendor_file_name[0]), f"[ERROR] 'vendor_file' is not found"
         vendor_file_name = vendor_file_name[0]
         replace_content_in_file(f"{pwd()}/{vendor_file_name}", patterns)
         cd("../..")
@@ -133,8 +133,7 @@ def main():
         for folder in lt_folders
     ]
     index_html = (
-        """
-<!DOCTYPE html>
+        """<!DOCTYPE html>
 <html lang="en">
 <head>
 <body>
