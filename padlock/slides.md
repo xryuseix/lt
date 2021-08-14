@@ -1,13 +1,13 @@
 ---
 theme: default
 highlighter: shiki
-title: '南京錠ピッキング術 - ピンタンブラー錠の仕組みと開け方を5分で紹介'
+title: '南京錠の仕組みと開け方 - ピンタンブラー錠の仕組みと開け方を5分で紹介'
 colorSchema: 'dark'
 ---
 
-# <mdi-lock /> 南京錠ピッキング術
+# <mdi-lock /> 南京錠の仕組みと開け方
 <div style="margin-left:5em">
-ピンタンブラー錠の仕組みと開け方を5分で紹介！！
+ピンタンブラー錠の仕組みと開け方を5分で紹介
 </div>
 
 ---
@@ -61,7 +61,7 @@ image: padlock.jpg
 2. 南京錠のピッキングの仕方
 3. ピッキングされないための鍵の工夫
 
-画像: https://ja.wikipedia.org/wiki/南京錠 より
+画像: [https://ja.wikipedia.org/wiki/南京錠](https://ja.wikipedia.org/wiki/南京錠) より
 
 ---
 layout: image-right
@@ -83,7 +83,7 @@ image: padlock_ana.jpg
  <img src="/padlock_yoko.png" style="height: 100%; display: block; margin: auto;"/>
 </div>
 
-画像: https://www.alsok.co.jp
+画像: [https://www.alsok.co.jp](https://www.alsok.co.jp/person/keystory/09/)
 
 ---
 
@@ -108,7 +108,7 @@ image: padlock_ana.jpg
   </tr>
 </table>
 
-画像: https://ja.wikipedia.org/wiki/ピンタンブラー錠
+画像: [https://ja.wikipedia.org/wiki/ピンタンブラー錠](https://ja.wikipedia.org/wiki/ピンタンブラー錠)
 
 <style>
   .table-img-content {
@@ -124,6 +124,16 @@ image: padlock_ana.jpg
 
 <div style="height: 85%">
  <img src="/padlock_center.png" style="height: 100%; display: block; margin: auto;"/>
+</div>
+
+---
+
+# 2. 南京錠を開ける方法 - ピッキング(1)
+
+<h2>前提知識</h2>
+
+<div style="height: 85%">
+ <img src="/padlock_open.png" style="height: 100%; display: block; margin: auto;"/>
 </div>
 
 ---
@@ -163,7 +173,8 @@ image: padlock_ana.jpg
 **ここに画像を入れる**
 
 注意: これの解除目的での所持は違法です．
-(とはいえ，家で作って家で使ってすぐ壊せばバレないと思いますが...)
+
+---
 
 # 2. 南京錠を開ける方法 - ピックセットなしver.(2)
 
