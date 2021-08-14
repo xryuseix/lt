@@ -80,7 +80,7 @@ image: padlock_ana.jpg
 # 1. 南京錠の仕組み(2)
 
 <div style="height: 85%">
- <img src="padlock_yoko.png" style="height: 100%; display: block; margin: auto;"/>
+ <img src="/padlock_yoko.png" style="height: 100%; display: block; margin: auto;"/>
 </div>
 
 画像: https://www.alsok.co.jp
@@ -92,18 +92,18 @@ image: padlock_ana.jpg
 <table class="table">
   <tr>
     <td class="table-img">
-      <img src="padlock_no_key.png" class="table-img-content">
+      <img src="/padlock_no_key.png" class="table-img-content">
     </td>
     <td class="table-img">
-      <img src="padlock_bad_key.png" class="table-img-content">
+      <img src="/padlock_bad_key.png" class="table-img-content">
     </td>
   </tr>
   <tr>
     <td class="table-img">
-      <img src="padlock_with_key.png" class="table-img-content">
+      <img src="/padlock_with_key.png" class="table-img-content">
     </td>
     <td class="table-img">
-      <img src="padlock_unlocked.png" class="table-img-content">
+      <img src="/padlock_unlocked.png" class="table-img-content">
     </td>
   </tr>
 </table>
