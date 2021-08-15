@@ -81,6 +81,13 @@ def replace_content_in_file(path: str, patterns):
     write_file(path, file)
 
 
+def endswith_array(string: str, keyword: list):
+    for key in keyword:
+        if string.endswith(key):
+            return True
+    return False
+
+
 def main():
     # 準備とか
     rm("public")
@@ -108,21 +115,34 @@ def main():
         cd(folder)
         # 絶対パスの修正
         # index.html の href, src
-        replace_content_in_file(f"{pwd()}/index.html", [('href="/', 'href="./'), ('src="/', 'src="./')])
+        replace_content_in_file(
+            f"{pwd()}/index.html", [('href="/', 'href="./'), ('src="/', 'src="./')]
+        )
         # assets/vender??????????.js の画像ファイル
+        image_ext = ["png", "jpg", "gif", "jpeg"]
         patterns = [
-            (f'[wr("img",{{src:"/{image}"', f'[wr("img",{{src:"./{folder}/{image}"')
+            (f'src:"/{image}"', f'src:"./{folder}/{image}"')
             for image in [
-                image for image in ls(pwd()) if image[-3:] in ["png", "jpg", "gif"]
+                image for image in ls(pwd()) if endswith_array(image, image_ext)
             ]
         ]
+        patterns.extend(
+            [
+                (f'image:"/{image}"', f'image:"./{folder}/{image}"')
+                for image in [
+                    image for image in ls(pwd()) if endswith_array(image, image_ext)
+                ]
+            ]
+        )
         cd("assets")
         vendor_file_name = [
             file
             for file in ls(pwd())
             if os.path.isfile(file) and file[0:7] == "vendor." and file[-3:] == ".js"
         ]
-        assert len(vendor_file_name) == 1 and os.path.exists(vendor_file_name[0]), f"[ERROR] 'vendor_file' is not found"
+        assert len(vendor_file_name) == 1 and os.path.exists(
+            vendor_file_name[0]
+        ), f"[ERROR] 'vendor_file' is not found"
         vendor_file_name = vendor_file_name[0]
         replace_content_in_file(f"{pwd()}/{vendor_file_name}", patterns)
         cd("../..")
