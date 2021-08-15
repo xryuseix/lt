@@ -132,8 +132,9 @@ def main():
                 for image in [
                     image for image in ls(pwd()) if endswith_array(image, image_ext)
                 ]
-            ],('href="/lt/lt/"', 'href="/lt/"')
+            ]
         )
+        patterns.extend(('href="/lt/lt/"', 'href="/lt/"'))
         cd("assets")
         vendor_file_name = [
             file
