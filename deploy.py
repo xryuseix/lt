@@ -115,10 +115,15 @@ def main():
         cd(folder)
         # 絶対パスの修正
         # index.html の href, src
-        replace_content_in_file(
-            f"{pwd()}/index.html", [('href="/', 'href="/lt/'), ('src="/', 'src="/lt/'), ('href="/lt/lt/"', 'href="/lt/"')]
-        )
+        index_replace_patterns = [
+            ('href="/', 'href="/lt/'),
+            ('src="/', 'src="/lt/'),
+            ('href="/lt/lt/', 'href="/lt/'),
+            ('src="/lt/lt/', 'src="/lt/'),
+        ]
+        replace_content_in_file(f"{pwd()}/index.html", index_replace_patterns)
         # assets/vender??????????.js の画像ファイル
+        cd("assets")
         image_ext = ["png", "jpg", "gif", "jpeg", "mp4", "mov"]
         patterns = [
             (f'src:"/{image}"', f'src:"/lt/{folder}/{image}"')
@@ -135,7 +140,6 @@ def main():
             ]
         )
         patterns.extend(('href="/lt/lt/"', 'href="/lt/"'))
-        cd("assets")
         vendor_file_name = [
             file
             for file in ls(pwd())
