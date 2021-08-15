@@ -116,10 +116,10 @@ def main():
         # 絶対パスの修正
         # index.html の href, src
         replace_content_in_file(
-            f"{pwd()}/index.html", [('href="/', 'href="/lt/'), ('src="/', 'src="/lt/')]
+            f"{pwd()}/index.html", [('href="/', 'href="/lt/'), ('src="/', 'src="/lt/'), ('href="/lt/lt/"', 'href="/lt/"')]
         )
         # assets/vender??????????.js の画像ファイル
-        image_ext = ["png", "jpg", "gif", "jpeg"]
+        image_ext = ["png", "jpg", "gif", "jpeg", "mp4", "mov"]
         patterns = [
             (f'src:"/{image}"', f'src:"/lt/{folder}/{image}"')
             for image in [
