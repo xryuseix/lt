@@ -7,9 +7,10 @@ colorSchema: 'dark'
 
 # <mdi-lock /> 南京錠の仕組みと開け方
 <div style="margin-left:5em">
-ピンタンブラー錠の仕組みと開け方を超簡単に5分で紹介
+ピンタンブラー錠の仕組みと開け方を超簡単に紹介
 </div>
 <div class="qrcode">
+<mdi-arrow-down-bold-outline />詳しく資料が見たい方はこちら！
   <a href=https://xryuseix.github.io/lt/padlock>
     <img src="/qrcode.png" />
     https://xryuseix.github.io/lt/padlock
@@ -46,7 +47,7 @@ colorSchema: 'dark'
   - SecHack365'20 研究駆動コース
 - ポートフォリオサイト <mdi-arrow-right-bold-outline /> [https://xryuseix.github.io](https://xryuseix.github.io)
 - アカウント <mdi-arrow-right-bold-outline /> <span class="text-twitter">[<carbon-logo-twitter />@ryusei_ishika](https://twitter.com/ryusei_ishika)</span> / [<carbon-logo-github /> xryuseix](https://github.com/xryuseix)
-  - IDはだいたい xryuseix です
+  - IDはだいたい **xryuseix** です
 - 研究(してた)テーマ
   - 競プロのプログラムの盗作検知
   - Zoomのバーチャル背景適用動画から部屋の復元
@@ -79,7 +80,7 @@ image: /padlock.jpg
 2. 南京錠のピッキングの仕方
 3. 南京錠のピッキング対策
 
-画像: [https://ja.wikipedia.org/wiki/南京錠](https://ja.wikipedia.org/wiki/南京錠) より
+画像: [https://ja.wikipedia.org/wiki/南京錠](https://ja.wikipedia.org/wiki/南京錠)
 
 ---
 layout: image-right
@@ -176,8 +177,8 @@ image: /padlock_ana.jpg
 
 **ここに画像を入れる**
 
-注意: 特殊開錠用具所持禁止法より，この工具は所持自体が違法です！！！
-(僕は許可を得て所持しています)
+注意: 特殊開錠用具所持禁止法より，この工具は所持自体が違法です！！！  
+(僕は日本鍵師協会の許可を得て所持しています)
 
 ---
 
@@ -218,18 +219,18 @@ image: /padlock_ana.jpg
 <table class="table">
   <tr>
     <td class="table-img">
-      1.<img src="/sympick_open.jpg" class="table-img-content">
+      1. 缶を開きます<img src="/sympick_open.jpg" class="table-img-content">
     </td>
     <td class="table-img">
-      2.<img src="/sympick_square.jpg" class="table-img-content">
+      2. 36mm*50mmで切ります<img src="/sympick_square.jpg" class="table-img-content">
     </td>
   </tr>
   <tr>
     <td class="table-img">
-      3.<img src="/sympick_block.jpg" class="table-img-content">
+      3. 4*4の線を引きます<img src="/sympick_block.jpg" class="table-img-content">
     </td>
     <td class="table-img">
-      4.<img src="/sympick_ori1.jpg" class="table-img-content">
+      4. M字で切ります<img src="/sympick_ori1.jpg" class="table-img-content">
     </td>
   </tr>
 </table>
@@ -252,18 +253,18 @@ image: /padlock_ana.jpg
 <table class="table">
   <tr>
     <td class="table-img">
-      5.<img src="/sympick_ori2.jpg" class="table-img-content">
+      5. 折ります<img src="/sympick_ori2.jpg" class="table-img-content">
     </td>
     <td class="table-img">
-      6.<img src="/sympick_ori3.jpg" class="table-img-content">
+      6. 折ります(2回目)<img src="/sympick_ori3.jpg" class="table-img-content">
     </td>
   </tr>
   <tr>
     <td class="table-img">
-      7.<img src="/sympick_ori4.jpg" class="table-img-content">
+      7. ペンを使って曲げます<img src="/sympick_ori4.jpg" class="table-img-content">
     </td>
     <td class="table-img">
-      8.<img src="/sympick_ori5.jpg" class="table-img-content">
+      8. 完成！<img src="/sympick_ori5.jpg" class="table-img-content">
     </td>
   </tr>
 </table>
@@ -286,6 +287,28 @@ image: /padlock_ana.jpg
 ---
 
 # 3. ピッキングされないための鍵の工夫
+
+<div class="flex">
+  <div class="flex-grow">
+    GOAL v18シリンダー<br />... ピンが大量にあります．
+    <br />
+    <a href="https://www.rrrmaji.com/product/823"><img src="/goalv18.jpeg" style="height: 13em"/>
+    画像: https://www.rrrmaji.com/product/823</a>
+  </div>
+  <div class="flex-grow">
+    アンチピッキングピン<br />... ピッキングすると鍵が回らなくなります．
+    <div class="flex">
+      <div class="flex-grow">
+        <br />普通のピン
+        <a href="kagi110qq.com"><img src="/normal_pin.png" style="height: 8em"/></a>
+      </div>
+      <div class="flex-grow">
+        <br />異形ピン
+        <a href="kagi110qq.com"><img src="/ikei_pin.png" style="height: 8em"/></a>
+      </div>
+    </div>
+  </div>
+</div>
 
 ---
 
