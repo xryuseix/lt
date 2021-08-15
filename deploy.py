@@ -133,13 +133,13 @@ def main():
         ]
         patterns.extend(
             [
-                (f'image:"/{image}"', f'image:"/lt/{folder}/{image}"')
+                (f'image:"/{image}', f'image:"/lt/{folder}/{image}')
                 for image in [
                     image for image in ls(pwd()) if endswith_array(image, image_ext)
                 ]
             ]
         )
-        patterns.extend(('href="/lt/lt/"', 'href="/lt/"'))
+        patterns.extend([('href="/lt/lt/', 'href="/lt/')])
         vendor_file_name = [
             file
             for file in ls(pwd())
@@ -148,8 +148,7 @@ def main():
         assert len(vendor_file_name) == 1 and os.path.exists(
             vendor_file_name[0]
         ), f"[ERROR] 'vendor_file' is not found"
-        vendor_file_name = vendor_file_name[0]
-        replace_content_in_file(f"{pwd()}/{vendor_file_name}", patterns)
+        replace_content_in_file(f"{pwd()}/{vendor_file_name[0]}", patterns)
         cd("../..")
 
     # 最後の仕上げ
