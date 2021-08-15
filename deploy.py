@@ -102,7 +102,7 @@ def main():
     for folder in lt_folders:
         cd(folder)
         _ = subprocess.run(["yarn", "install"])
-        _ = subprocess.run(["yarn", "run", "build"])
+        _ = subprocess.run(["yarn", "run", "build", "--base", f"/lt/{folder}/"])
         if os.path.exists(f"{pwd()}/{folder}/dist"):
             print(f"[ERROR] build failed! ({folder})")
         cd("..")
@@ -116,19 +116,19 @@ def main():
         # 絶対パスの修正
         # index.html の href, src
         replace_content_in_file(
-            f"{pwd()}/index.html", [('href="/', 'href="./'), ('src="/', 'src="./')]
+            f"{pwd()}/index.html", [('href="/', 'href="/lt/'), ('src="/', 'src="/lt/')]
         )
         # assets/vender??????????.js の画像ファイル
         image_ext = ["png", "jpg", "gif", "jpeg"]
         patterns = [
-            (f'src:"/{image}"', f'src:"./{folder}/{image}"')
+            (f'src:"/{image}"', f'src:"/lt/{folder}/{image}"')
             for image in [
                 image for image in ls(pwd()) if endswith_array(image, image_ext)
             ]
         ]
         patterns.extend(
             [
-                (f'image:"/{image}"', f'image:"./{folder}/{image}"')
+                (f'image:"/{image}"', f'image:"/lt/{folder}/{image}"')
                 for image in [
                     image for image in ls(pwd()) if endswith_array(image, image_ext)
                 ]
@@ -149,7 +149,7 @@ def main():
 
     # 最後の仕上げ
     lt_link = [
-        f'<li><a href="./{folder}/index.html"> {folder} </a></li>'
+        f'<li><a href="/lt/{folder}/index.html"> {folder} </a></li>'
         for folder in lt_folders
     ]
     index_html = (
