@@ -7,8 +7,26 @@ colorSchema: 'dark'
 
 # <mdi-lock /> 南京錠の仕組みと開け方
 <div style="margin-left:5em">
-ピンタンブラー錠の仕組みと開け方を5分で紹介
+ピンタンブラー錠の仕組みと開け方を超簡単に5分で紹介
 </div>
+<div class="qrcode">
+  <a href=https://xryuseix.github.io/lt/padlock>
+    <img src="/qrcode.png" />
+    https://xryuseix.github.io/lt/padlock
+  </a>
+</div>
+
+<style>
+  .qrcode {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+    text-align: center;
+  }
+  img {
+    height: 10em;
+  }
+</style>
 
 ---
 
@@ -52,20 +70,20 @@ colorSchema: 'dark'
 
 ---
 layout: image-right
-image: padlock.jpg
+image: /padlock.jpg
 ---
 
 # 今回話すこと
 
 1. 南京錠の仕組み
 2. 南京錠のピッキングの仕方
-3. ピッキングされないための鍵の工夫
+3. 南京錠のピッキング対策
 
 画像: [https://ja.wikipedia.org/wiki/南京錠](https://ja.wikipedia.org/wiki/南京錠) より
 
 ---
 layout: image-right
-image: padlock_ana.jpg
+image: /padlock_ana.jpg
 ---
 
 # 1. 南京錠の仕組み(1)
@@ -92,18 +110,18 @@ image: padlock_ana.jpg
 <table class="table">
   <tr>
     <td class="table-img">
-      <img src="/padlock_no_key.png" class="table-img-content">
+      1.<img src="/padlock_no_key.png" class="table-img-content">
     </td>
     <td class="table-img">
-      <img src="/padlock_bad_key.png" class="table-img-content">
+      2.<img src="/padlock_bad_key.png" class="table-img-content">
     </td>
   </tr>
   <tr>
     <td class="table-img">
-      <img src="/padlock_with_key.png" class="table-img-content">
+      3.<img src="/padlock_with_key.png" class="table-img-content">
     </td>
     <td class="table-img">
-      <img src="/padlock_unlocked.png" class="table-img-content">
+      4.<img src="/padlock_unlocked.png" class="table-img-content">
     </td>
   </tr>
 </table>
@@ -113,6 +131,9 @@ image: padlock_ana.jpg
 <style>
   .table-img-content {
     display: block; margin: auto;
+  }
+  img {
+    height: 9.5em;
   }
 </style>
 
@@ -144,8 +165,8 @@ image: padlock_ana.jpg
 
 **ここに画像を入れる**
 
-注意: 特殊開錠用具所持禁止法より，この工具は所持自体が違法です！！！
-(僕は許可を得て所持しています)
+注意: 特殊開錠用具所持禁止法より，この工具は所持自体が違法です！！！  
+(僕は日本鍵師協会の許可を得て所持しています)
 
 ---
 
@@ -163,16 +184,30 @@ image: padlock_ana.jpg
 # 2. 南京錠を開ける方法 - ピックセットなしver.(1)
 
 <h2>用意するもの</h2>
+<div class="flex">
+<div class="flex-grow">
 
 * 南京錠(種類を選びますが後述)
 * レッドブル
-* ハサミ
-* 油性ペン
+* ハサミ，カッター
+* ボールペン(細めの)
+* 棒やすり(あれば)
 * 覚悟
 
-**ここに画像を入れる**
+</div>
+<div class="flex-grow">
+  <div class="flex">
+    <div class="flex-grow">
+    <img src="/sympick_redbull.jpg" style="height: 13em"/>
+    </div>
+    <div class="flex-grow">
+        <img src="/sympick_prepare.jpg" style="height: 13em"/>
+    </div>
+  </div>
+</div>
+</div>
 
-注意: これの解除目的での所持は違法です．
+注意: これの解除目的での所持は違法です(シムピックという工具を自作します)．
 
 ---
 
@@ -180,9 +215,100 @@ image: padlock_ana.jpg
 
 <h2>開け方の手順</h2>
 
-**ここに画像を入れる**
+<table class="table">
+  <tr>
+    <td class="table-img">
+      1.<img src="/sympick_open.jpg" class="table-img-content">
+    </td>
+    <td class="table-img">
+      2.<img src="/sympick_square.jpg" class="table-img-content">
+    </td>
+  </tr>
+  <tr>
+    <td class="table-img">
+      3.<img src="/sympick_block.jpg" class="table-img-content">
+    </td>
+    <td class="table-img">
+      4.<img src="/sympick_ori1.jpg" class="table-img-content">
+    </td>
+  </tr>
+</table>
+
+<style>
+  .table-img-content {
+    display: block; margin: auto;
+  }
+  img {
+    height: 9.5em;
+  }
+</style>
+
+---
+
+# 2. 南京錠を開ける方法 - ピックセットなしver.(3)
+
+<h2>開け方の手順</h2>
+
+<table class="table">
+  <tr>
+    <td class="table-img">
+      5.<img src="/sympick_ori2.jpg" class="table-img-content">
+    </td>
+    <td class="table-img">
+      6.<img src="/sympick_ori3.jpg" class="table-img-content">
+    </td>
+  </tr>
+  <tr>
+    <td class="table-img">
+      7.<img src="/sympick_ori4.jpg" class="table-img-content">
+    </td>
+    <td class="table-img">
+      8.<img src="/sympick_ori5.jpg" class="table-img-content">
+    </td>
+  </tr>
+</table>
+
+<style>
+  .table-img-content {
+    display: block; margin: auto;
+  }
+  img {
+    height: 9.5em;
+  }
+</style>
+
+---
+
+# 2. 南京錠を開ける方法 - ピックセットなしver.(4)
+
+
 
 ---
 
 # 3. ピッキングされないための鍵の工夫
 
+---
+
+# ご清聴ありがとうございました！
+
+<h2>発表内容</h2>
+
+* 南京錠の仕組み
+* 南京錠の開け方
+* 南京錠のピッキング対策
+
+<h2>想定Q & A</h2>
+
+* Q. 研究室の鍵が開かなくなったらピッキングしてください
+  * A. 法律上厳しいです><
+* Q. 物理鍵開けに興味があります．何から始めればいいですか？
+  * A. ピックセットを持たなくていいなら「ハッカーの学校 鍵開けの教科書」，Youtube(●●鍵 ピッキングとかで検索)，ピッキングしたい/鍵に関する業務を行いたいなら「日本鍵師協会」の「鍵師養成7日間講習」など
+* Q. 結局，石川は何ができるの？
+  * A. 鍵に関する相談を乗るくらいならできます！(鍵交換，合鍵作成，鍵開け，簡単な修理など)
+
+<style>
+  h2 {
+    font-size: 1.5em;
+    margin-top: 0;
+  }
+</style>
