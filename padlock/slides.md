@@ -56,13 +56,30 @@ colorSchema: 'dark'
 
 <div class="flex-grow">
 
+<div class="qrcode">
+  <a href=https://xryuseix.github.io/lt/padlock>
+    <img src="/qrcode.png" />
+  </a>
+</div>
+
+<style>
+  .qrcode {
+    position: absolute;
+    bottom: 2%;
+    right: 1%;
+  }
+  .qrcode img {
+    height: 7em;
+  }
+</style>
+
 ## 好きな○○
 <br />
 
 - 言語 <mdi-arrow-right-bold-outline /> <logos-c-plusplus /> C++, <logos-rust style="background:white"/> Rust, <logos-python /> Python
 <img src="https://camo.githubusercontent.com/37eb24996c3cae0fe6b7b804e6bcb32f2141e5bdffbdeecaf046ff64244fc5a9/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d7872797573656978266c61796f75743d636f6d70616374266c616e67735f636f756e743d3130266578636c7564655f7265706f3d53412d506c61672c4174436f6465725f4261636b75702c5365634861636b3336352d446174617365742c26686964653d68746d6c2c4d616b6566696c652c6373732c5465782c434d616b652c534353532c43267468656d653d746f6b796f6e69676874" style="height:10em" />
 - エディタ <mdi-arrow-right-bold-outline /> <vscode-icons-file-type-vscode /> VSCode
-- OS <mdi-arrow-right-bold-outline /> <mdi-apple /> macOS
+- OS <mdi-arrow-right-bold-outline /> <mdi-apple /> macOS (M1)
 - データ構造 <mdi-arrow-right-bold-outline /> <carbon-decision-tree /> Segment Tree
 - キーボード <mdi-arrow-right-bold-outline /> <carbon-keyboard /> REALFORCE
 
@@ -111,18 +128,18 @@ image: /padlock_ana.jpg
 <table class="table">
   <tr>
     <td class="table-img">
-      1.<img src="/padlock_no_key.png" class="table-img-content">
+      1.何もさしていない状態<img src="/padlock_no_key.png" class="table-img-content">
     </td>
     <td class="table-img">
-      2.<img src="/padlock_bad_key.png" class="table-img-content">
+      2.違う鍵をさした状態<img src="/padlock_bad_key.png" class="table-img-content">
     </td>
   </tr>
   <tr>
     <td class="table-img">
-      3.<img src="/padlock_with_key.png" class="table-img-content">
+      3.合鍵をさした状態<img src="/padlock_with_key.png" class="table-img-content">
     </td>
     <td class="table-img">
-      4.<img src="/padlock_unlocked.png" class="table-img-content">
+      4.合鍵で回した状態<img src="/padlock_unlocked.png" class="table-img-content">
     </td>
   </tr>
 </table>
@@ -164,7 +181,9 @@ image: /padlock_ana.jpg
 
 <h2>道具</h2>
 
-**ここに画像を入れる**
+<div style="height: 75%">
+ <img src="/dougu.jpg" style="height: 100%; display: block; margin: auto;"/>
+</div>
 
 注意: 特殊開錠用具所持禁止法より，この工具は所持自体が違法です！！！  
 (僕は日本鍵師協会の許可を得て所持しています)
@@ -175,114 +194,33 @@ image: /padlock_ana.jpg
 
 <h2>開け方の手順</h2>
 
-**ここに画像を入れる**
+<div style="height: 75%">
+ <img src="/pick.jpg" style="height: 100%; display: block; margin: auto;"/>
+</div>
 
 注意: 特殊開錠用具所持禁止法より，この工具は所持自体が違法です！！！  
 (僕は日本鍵師協会の許可を得て所持しています)
 
 ---
 
-# 2. 南京錠を開ける方法 - ピックセットなしver.(1)
+# 2. 南京錠を開ける方法 - ピッキング(4)
 
-<h2>用意するもの</h2>
+<h2>なぜ開くのか</h2>
+
 <div class="flex">
-<div class="flex-grow">
-
-* 南京錠(種類を選びますが後述)
-* レッドブル
-* ハサミ，カッター
-* ボールペン(細めの)
-* 棒やすり(あれば)
-* 覚悟
-
-</div>
-<div class="flex-grow">
-  <div class="flex">
-    <div class="flex-grow">
-    <img src="/sympick_redbull.jpg" style="height: 13em"/>
-    </div>
-    <div class="flex-grow">
-        <img src="/sympick_prepare.jpg" style="height: 13em"/>
-    </div>
+  <div class="flex-grow">
+    <ol>
+      <li>テンションをかけると上ピンが内筒と外筒の間に引っかかる</li>
+      <li>引っかかった状態で下ピンをピックで軽く押すと，上ピンが下に落ちて来なくなる</li>
+      <li>下ピンは引っかかることなく，重力でおちる</li>
+      <li>シェアラインが揃う！</li>
+    </ol>
+  </div>
+  <div class="flex-grow">
+    <a href="http://s-akademeia.sakura.ne.jp/main/books/lock/"><img src="/pick_naname.jpg" style="height: 14em"/></a>
+    画像: ハッカーの学校 鍵開けの教科書P176
   </div>
 </div>
-</div>
-
-注意: これの解除目的での所持は違法です(シムピックという工具を自作します)．
-
----
-
-# 2. 南京錠を開ける方法 - ピックセットなしver.(2)
-
-<h2>開け方の手順</h2>
-
-<table class="table">
-  <tr>
-    <td class="table-img">
-      1. 缶を開きます<img src="/sympick_open.jpg" class="table-img-content">
-    </td>
-    <td class="table-img">
-      2. 36mm*50mmで切ります<img src="/sympick_square.jpg" class="table-img-content">
-    </td>
-  </tr>
-  <tr>
-    <td class="table-img">
-      3. 4*4の線を引きます<img src="/sympick_block.jpg" class="table-img-content">
-    </td>
-    <td class="table-img">
-      4. M字で切ります<img src="/sympick_ori1.jpg" class="table-img-content">
-    </td>
-  </tr>
-</table>
-
-<style>
-  .table-img-content {
-    display: block; margin: auto;
-  }
-  img {
-    height: 9.5em;
-  }
-</style>
-
----
-
-# 2. 南京錠を開ける方法 - ピックセットなしver.(3)
-
-<h2>開け方の手順</h2>
-
-<table class="table">
-  <tr>
-    <td class="table-img">
-      5. 折ります<img src="/sympick_ori2.jpg" class="table-img-content">
-    </td>
-    <td class="table-img">
-      6. 折ります(2回目)<img src="/sympick_ori3.jpg" class="table-img-content">
-    </td>
-  </tr>
-  <tr>
-    <td class="table-img">
-      7. ペンを使って曲げます<img src="/sympick_ori4.jpg" class="table-img-content">
-    </td>
-    <td class="table-img">
-      8. 完成！<img src="/sympick_ori5.jpg" class="table-img-content">
-    </td>
-  </tr>
-</table>
-
-<style>
-  .table-img-content {
-    display: block; margin: auto;
-  }
-  img {
-    height: 9.5em;
-  }
-</style>
-
----
-
-# 2. 南京錠を開ける方法 - ピックセットなしver.(4)
-
-
 
 ---
 
@@ -307,6 +245,14 @@ image: /padlock_ana.jpg
         <a href="kagi110qq.com"><img src="/ikei_pin.png" style="height: 8em"/></a>
       </div>
     </div>
+    <br />
+    他にも最近のには...
+    <ul>
+    <li>鍵穴の向きが違ってピックが入らない</li>
+    <li>ピンに溝があってピックが抜ける</li>
+    <li>ピッキングした際には二度と閉まらなくなる</li>
+    などの工夫が！
+    </ul>
   </div>
 </div>
 
@@ -325,8 +271,8 @@ image: /padlock_ana.jpg
 * Q. 研究室の鍵が開かなくなったらピッキングしてください
   * A. 法律上厳しいです><
 * Q. 物理鍵開けに興味があります．何から始めればいいですか？
-  * A. ピックセットを持たなくていいなら「ハッカーの学校 鍵開けの教科書」，Youtube(●●鍵 ピッキングとかで検索)，ピッキングしたい/鍵に関する業務を行いたいなら「日本鍵師協会」の「鍵師養成7日間講習」など
-* Q. 結局，石川は何ができるの？
+  * A. ピックセットを持たなくていいなら<a href="http://s-akademeia.sakura.ne.jp/main/books/lock/">「ハッカーの学校 鍵開けの教科書」</a>，Youtube(●●鍵 ピッキングとかで検索)，ピッキングしたい/鍵に関する業務を行いたいなら「日本鍵師協会」の「鍵師養成7日間講習」など
+* Q. 結局，発表者・石川は何ができるの？
   * A. 鍵に関する相談を乗るくらいならできます！(鍵交換，合鍵作成，鍵開け，簡単な修理など)
 
 <style>
