@@ -8,7 +8,7 @@ download: true
 
 # <mdi-lock /> 南京錠の仕組みと開け方
 <div style="margin-left:5em">
-ピンタンブラー錠の仕組みと開け方を超簡単に紹介
+ピンタンブラー錠の仕組みと開け方を <b>超簡単に</b> 紹介
 </div>
 <div class="qrcode">
 <mdi-arrow-down-bold-outline />詳しく資料が見たい方はこちら！
@@ -63,6 +63,8 @@ download: true
   </a>
 </div>
 
+<div class="comment">今日二級鍵師技能検定受けてきましたv^^v</div>
+
 <style>
   .qrcode {
     position: absolute;
@@ -71,6 +73,12 @@ download: true
   }
   .qrcode img {
     height: 7em;
+  }
+  .comment {
+    position: absolute;
+    bottom: 2%;
+    left: 1%;
+    font-size: 0.7em;
   }
 </style>
 
@@ -219,11 +227,11 @@ image: /padlock_ana.jpg
     </ol>
   </div>
   <div class="flex-grow">
+    <img src="/pick_naname.jpg" style="width: 14em"/>
+    <img src="/pick_naname2.jpg" style="width: 14em"/>
     <a href="http://s-akademeia.sakura.ne.jp/main/books/lock/">
-      <img src="/pick_naname.jpg" style="width: 14em"/>
-      <img src="/pick_naname2.jpg" style="width: 14em"/>
+    画像: ハッカーの学校 鍵開けの教科書 P176
     </a>
-    画像: ハッカーの学校 鍵開けの教科書P176
   </div>
 </div>
 
@@ -276,7 +284,7 @@ image: /padlock_ana.jpg
 * Q. 研究室の鍵が開かなくなったらピッキングしてください
   * A. 法律上厳しいです><
 * Q. 物理鍵開けに興味があります．何から始めればいいですか？
-  * A. ピックセットを持たなくていいなら<a href="http://s-akademeia.sakura.ne.jp/main/books/lock/">「ハッカーの学校 鍵開けの教科書」</a>，Youtube(●●鍵 ピッキングとかで検索)，ピッキングしたい/鍵に関する業務を行いたいなら「日本鍵師協会」の「鍵師養成7日間講習」など
+  * A. ピックセットを持たなくていいなら<a href="http://s-akademeia.sakura.ne.jp/main/books/lock/">「ハッカーの学校 鍵開けの教科書」</a>，Youtube(●●鍵 ピッキングとかで検索)，ピッキングしたい/鍵に関する業務を行いたいなら「日本鍵師協会」の「鍵師養成7日間講習」など(←僕はこれの修了生です)
 * Q. 結局，発表者・石川は何ができるの？
   * A. 鍵に関する相談を乗るくらいならできます！(鍵交換，合鍵作成，鍵開け，簡単な修理など)
 
