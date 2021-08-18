@@ -103,6 +103,7 @@ def main():
         cd(folder)
         _ = subprocess.run(["yarn", "install"])
         _ = subprocess.run(["yarn", "run", "build", "--base", f"/lt/{folder}/"])
+        _ = subprocess.run(["yarn", "run", "export"])
         if os.path.exists(f"{pwd()}/{folder}/dist"):
             print(f"[ERROR] build failed! ({folder})")
         cd("..")
@@ -150,10 +151,14 @@ def main():
         ), f"[ERROR] 'vendor_file' is not found"
         replace_content_in_file(f"{pwd()}/{vendor_file_name[0]}", patterns)
         cd("../..")
+        # ダウンロード機能を作成
+        mkdir(f"{pwd()}/{folder}/download")
+        cp(f"{pwd()}/../{folder}/slides-export.pdf", f"{pwd()}/{folder}/download/slide.pdf")
+        
 
     # 最後の仕上げ
     lt_link = [
-        f'<li><a href="/lt/{folder}/index.html"> {folder} </a></li>'
+        f'<li><a href="/lt/{folder}/index.html"> {folder} </a> <a href="/lt/{folder}/download/slide.pdf" download>[download]</a></li>'
         for folder in lt_folders
     ]
     index_html = (
@@ -171,7 +176,6 @@ def main():
 """
     )
     write_file("index.html", index_html)
-
 
 if __name__ == "__main__":
     main()
