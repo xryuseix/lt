@@ -3,6 +3,7 @@ theme: default
 highlighter: shiki
 title: '南京錠の仕組みと開け方 - ピンタンブラー錠の仕組みと開け方を5分で紹介'
 colorSchema: 'dark'
+download: true
 ---
 
 # <mdi-lock /> 南京錠の仕組みと開け方

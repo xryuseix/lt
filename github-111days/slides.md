@@ -3,6 +3,7 @@ theme: default
 highlighter: shiki
 title: '1日1コードのすゝめ - 111日間毎日プログラムを書く方法と結果'
 colorSchema: 'dark'
+download: true
 ---
 
 # <carbon-logo-github /> 1日1コードのすゝめ
