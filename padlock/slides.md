@@ -46,7 +46,7 @@ download: true
   - AtCoder <span style="color:lightblue">**水色**</span> / CodeForces <span style="color:#6495ed">**青色**</span>
   - Seccamp'19 暗号化通信ゼミ
   - SecHack365'20 研究駆動コース
-- ポートフォリオサイト <mdi-arrow-right-bold-outline /> [https://xryuseix.github.io](https://xryuseix.github.io)
+- Webサイト <mdi-arrow-right-bold-outline /> [https://xryuseix.github.io](https://xryuseix.github.io)
 - アカウント <mdi-arrow-right-bold-outline /> <span class="text-twitter">[<carbon-logo-twitter />@ryusei_ishika](https://twitter.com/ryusei_ishika)</span> / [<carbon-logo-github /> xryuseix](https://github.com/xryuseix)
   - IDはだいたい **xryuseix** です
 - 研究(してた)テーマ
@@ -109,6 +109,7 @@ image: /padlock_ana.jpg
 
 * 南京錠の鍵穴ってみたことありますか？？
 * 南京錠はだいたい<h2>ピンタンブラー錠</h2>と呼ばれる鍵です
+* 今日はピンタンブラー錠について話します
 
 画像: https://kagi-otasuketai.com
 
@@ -168,7 +169,7 @@ image: /padlock_ana.jpg
 
 ---
 
-# 2. 南京錠を開ける方法 - ピッキング(1)
+# 2. 南京錠を開ける方法 - ピッキング(2)
 
 <h2>前提知識</h2>
 
@@ -178,7 +179,7 @@ image: /padlock_ana.jpg
 
 ---
 
-# 2. 南京錠を開ける方法 - ピッキング(2)
+# 2. 南京錠を開ける方法 - ピッキング(3)
 
 <h2>道具</h2>
 
@@ -191,7 +192,7 @@ image: /padlock_ana.jpg
 
 ---
 
-# 2. 南京錠を開ける方法 - ピッキング(3)
+# 2. 南京錠を開ける方法 - ピッキング(4)
 
 <h2>開け方の手順</h2>
 
@@ -204,7 +205,7 @@ image: /padlock_ana.jpg
 
 ---
 
-# 2. 南京錠を開ける方法 - ピッキング(4)
+# 2. 南京錠を開ける方法 - ピッキング(5)
 
 <h2>なぜ開くのか</h2>
 
@@ -212,13 +213,16 @@ image: /padlock_ana.jpg
   <div class="flex-grow">
     <ol>
       <li>テンションをかけると上ピンが内筒と外筒の間に引っかかる</li>
-      <li>引っかかった状態で下ピンをピックで軽く押すと，上ピンが下に落ちて来なくなる</li>
+      <li>引っかかった状態で下ピンをピックで軽く押すと，<br>上ピンが下に落ちて来なくなる</li>
       <li>下ピンは引っかかることなく，重力でおちる</li>
       <li>シェアラインが揃う！</li>
     </ol>
   </div>
   <div class="flex-grow">
-    <a href="http://s-akademeia.sakura.ne.jp/main/books/lock/"><img src="/pick_naname.jpg" style="height: 14em"/></a>
+    <a href="http://s-akademeia.sakura.ne.jp/main/books/lock/">
+      <img src="/pick_naname.jpg" style="width: 14em"/>
+      <img src="/pick_naname2.jpg" style="width: 14em"/>
+    </a>
     画像: ハッカーの学校 鍵開けの教科書P176
   </div>
 </div>
