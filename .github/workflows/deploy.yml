@@ -30,7 +30,12 @@ jobs:
       - name: Install Dependencies
         run: python -m pip install --upgrade pip
       - name: Build
-        run: python deploy.py
+        run: |
+          if [ -d dist ]; then
+            rm -rf dist
+          fi
+          yarn run dev
+          python build.py
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
         with:

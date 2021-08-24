@@ -90,8 +90,6 @@ def endswith_array(string: str, keyword: list):
 
 def main():
     # 準備とか
-    rm("dist")
-    _ = subprocess.run(["yarn", "run", "build"])
     assert os.path.exists("dist"), f"[ERROR] dist is not found"
 
     lt_folders = [
