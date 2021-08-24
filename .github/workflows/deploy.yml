@@ -34,7 +34,7 @@ jobs:
           if [ -d dist ]; then
             rm -rf dist
           fi
-          yarn run dev
+          yarn run build
           python build.py
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3
