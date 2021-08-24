@@ -1,7 +1,7 @@
 <!-- @format -->
 
 <template>
-  <div class="hello">
+  <div class="lt_list">
     <h1>{{ msg }}</h1>
     <ul>
       <li>
@@ -18,7 +18,7 @@
 
 <script>
 export default {
-  name: "LT_List",
+  name: "LTList",
   props: {
     msg: String,
   },

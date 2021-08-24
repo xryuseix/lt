@@ -102,6 +102,7 @@ def main():
             ".github",
             "dist",
             ".dist",
+            "public",
             "node_modules",
             "src",
             ".vscode",

@@ -1,15 +1,15 @@
 <template>
   <img alt="Vue logo" src="./assets/logo.png">
-  <LT_List msg="Welcome to my LT index page"/>
+  <LTList msg="Welcome to my LT index page"/>
 </template>
 
 <script>
-import LT_List from './components/LT_List.vue'
+import LTList from './components/LT_List.vue'
 
 export default {
   name: 'App',
   components: {
-    LT_List
+    LTList
   }
 }
 </script>
