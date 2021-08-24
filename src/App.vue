@@ -1,17 +1,21 @@
+<!-- @format -->
+
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <LTList msg="Welcome to my LT index page"/>
+  <p class="logo">
+    <img alt="Vue logo" src="./assets/logo.png" />
+  </p>
+  <LTList msg="Welcome to my LT page" />
 </template>
 
 <script>
-import LTList from './components/LT_List.vue'
+import LTList from "./components/LT_List.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    LTList
-  }
-}
+    LTList,
+  },
+};
 </script>
 
 <style>
@@ -22,5 +26,8 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+}
+.logo img {
+  width: 40%;
 }
 </style>
