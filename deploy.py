@@ -90,12 +90,24 @@ def endswith_array(string: str, keyword: list):
 
 def main():
     # 準備とか
-    rm("public")
-    mkdir("public")
+    rm("dist")
+    _ = subprocess.run(["yarn", "run", "build"])
+    assert os.path.exists("dist"), f"[ERROR] dist is not found"
+
     lt_folders = [
         folder
         for folder in ls(pwd())
-        if os.path.isdir(folder) and folder[0] != "." and folder != "public"
+        if os.path.isdir(folder)
+        and folder[0] != "."
+        and folder
+        not in [
+            ".github",
+            "dist",
+            ".dist",
+            "node_modules",
+            "src",
+            ".vscode",
+        ]
     ]
 
     # ビルド
@@ -109,7 +121,7 @@ def main():
 
     # ファイルのコピー
     root_path = pwd()
-    cd("public")
+    cd("dist")
     for folder in lt_folders:
         cp(f"{root_path}/{folder}/dist", f"{pwd()}/{folder}")
         cd(folder)
@@ -150,29 +162,28 @@ def main():
         ), f"[ERROR] 'vendor_file' is not found"
         replace_content_in_file(f"{pwd()}/{vendor_file_name[0]}", patterns)
         cd("../..")
-        
 
     # 最後の仕上げ
-    lt_link = [
-        f'<li><a href="/lt/{folder}/index.html"> {folder} </a></li>'
-        for folder in lt_folders
-    ]
-    index_html = (
-        """<!DOCTYPE html>
-<html lang="ja">
-<head>
-<body>
-  <ul>
-"""
-        + "".join(lt_link)
-        + """
-    </ul>
-</body>
-</html>
-"""
-    )
-    write_file("index.html", index_html)
-    
+#     lt_link = [
+#         f'<li><a href="/lt/{folder}/index.html"> {folder} </a></li>'
+#         for folder in lt_folders
+#     ]
+#     index_html = (
+#         """<!DOCTYPE html>
+# <html lang="ja">
+# <head>
+# <body>
+#   <ul>
+# """
+#         + "".join(lt_link)
+#         + """
+#     </ul>
+# </body>
+# </html>
+# """
+#     )
+#     write_file("index.html", index_html)
+
 
 if __name__ == "__main__":
     main()
