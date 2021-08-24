@@ -6,11 +6,11 @@
     <ul>
       <li>
         <a href="/lt/padlock/index.html"> padlock </a>
-        <a href="/lt/padlock/download/slide.pdf" download>[download]</a>
+        <a href="/lt/padlock/download/slidev-exported.pdf" download>[download]</a>
       </li>
       <li>
         <a href="/lt/github-111days/index.html"> github-111days </a>
-        <a href="/lt/github-111days/download/slide.pdf" download>[download]</a>
+        <a href="/lt/github-111days/slidev-exported.pdf" download>[download]</a>
       </li>
     </ul>
   </div>

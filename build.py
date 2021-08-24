@@ -162,27 +162,5 @@ def main():
         replace_content_in_file(f"{pwd()}/{vendor_file_name[0]}", patterns)
         cd("../..")
 
-    # 最後の仕上げ
-#     lt_link = [
-#         f'<li><a href="/lt/{folder}/index.html"> {folder} </a></li>'
-#         for folder in lt_folders
-#     ]
-#     index_html = (
-#         """<!DOCTYPE html>
-# <html lang="ja">
-# <head>
-# <body>
-#   <ul>
-# """
-#         + "".join(lt_link)
-#         + """
-#     </ul>
-# </body>
-# </html>
-# """
-#     )
-#     write_file("index.html", index_html)
-
-
 if __name__ == "__main__":
     main()
