@@ -2,9 +2,9 @@
 
 <template>
   <p class="logo">
-    <img alt="Vue logo" src="./assets/logo.png" />
+    <img alt="logo" src="./assets/logo.png" />
   </p>
-  <LTList msg="Welcome to my LT page" />
+  <LTList />
 </template>
 
 <script>
@@ -29,5 +29,7 @@ export default {
 }
 .logo img {
   width: 40%;
+  max-height: 500px;
+  max-width: 500px;
 }
 </style>
