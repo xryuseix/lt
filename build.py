@@ -161,6 +161,8 @@ def main():
         ), f"[ERROR] 'vendor_file' is not found"
         replace_content_in_file(f"{pwd()}/{vendor_file_name[0]}", patterns)
         cd("../..")
+    cd("..")
+
 
 if __name__ == "__main__":
     main()
