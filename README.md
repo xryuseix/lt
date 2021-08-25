@@ -1,50 +1,55 @@
-[![GitHub Pages](https://github.com/xryuseix/LT/actions/workflows/deploy.yml/badge.svg)](https://github.com/xryuseix/LT/actions/workflows/deploy.yml)
+<!-- @format -->
 
-# LT 資料の index ページ(開発中)
+[![GitHub Pages](https://github.com/xryuseix/LT/actions/workflows/deploy.yml/badge.svg)](https://github.com/xryuseix/LT/actions/workflows/deploy.yml) ![Vue.js](https://img.shields.io/badge/Vue.js-3.0.0-3FB27F?logo=Vue.js) ![Slidev](https://img.shields.io/badge/Slidev-0.22.7-4AC2D3)
 
-[https://xryuseix.github.io/lt](https://xryuseix.github.io/lt)
+# LT 資料一覧
+
+**[https://xryuseix.github.io/lt](https://xryuseix.github.io/lt)**
+
+<div style="text-align: center">
+  <a href="https://xryuseix.github.io/lt">
+    <img src="./images/logo.png" width="50%">
+  </a>
+</div>
 
 ## 開発 / デプロイ
 
-* httpで特定スライドを起動
+### LT 資料の開発
+
+#### 開発環境で起動 - Slidev
 
 ```sh
-cd なんか/dist && php -S 127.0.0.1:8088
+cd {LTフォルダ}
+yarn dev
 ```
 
-* 開発環境で起動
+#### 本番環境で起動
 
 ```sh
-cd なんか && yarn dev
+cd {LTフォルダ}/dist
+php -S 127.0.0.1:8088
 ```
 
-* PDF 取得
+#### PDF を取得
 
 ```sh
-cd なんか && slidev export --format pdf
+cd {LTフォルダ}
+yarn export
 ```
 
-## vue.js の README
+### index ページの開発
 
-### Project setup
-```
-yarn install
-```
+#### 開発環境で起動 - Vue.js
 
-### Compiles and hot-reloads for development
-```
+```sh
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
-```
+#### デプロイ
 
-### Lints and fixes files
-```
-yarn lint
-```
+- PUSH 時に GitHub Actions が自動デプロイ
+- 手元でビルドテストする際は以下のコマンドを打つ
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+```sh
+./deploy_test.sh
+```

@@ -78,4 +78,5 @@ ng_folder_list = [
     "src",
     ".vscode",
     "__pycache__",
+    "images"
 ]
