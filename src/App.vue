@@ -5,6 +5,12 @@
     <img alt="logo" src="./assets/logo.png" />
   </p>
   <LTList />
+  <div class="icons">
+    <a href="https://github.com/xryuseix/lt"><img src="./assets/github.png"/></a
+    ><a href="https://xryuseix.github.io"
+      ><img src="./assets/xryuseix.png"
+    /></a>
+  </div>
 </template>
 
 <script>
@@ -13,7 +19,7 @@ import LTList from "./components/LT_List.vue";
 export default {
   name: "App",
   components: {
-    LTList,
+    LTList: LTList,
   },
 };
 </script>
@@ -31,5 +37,12 @@ export default {
   width: 40%;
   max-height: 500px;
   max-width: 500px;
+}
+.icons {
+  margin: 30px;
+}
+.icons img {
+  width: 50px;
+  margin: 0 10px;
 }
 </style>

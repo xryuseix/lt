@@ -54,6 +54,7 @@ table {
   margin-left: auto;
   margin-right: auto;
   border-collapse: collapse;
+  margin-bottom: 30px;
 }
 table .title {
   width: 40%;
