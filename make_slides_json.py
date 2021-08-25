@@ -57,7 +57,7 @@ def main():
                 "id": folder,
                 "title": title,
                 "link": f"https://xryuseix.github.io/lt/{folder}",
-                "download": f"https://xryuseix.github.io/lt/{folder}/download/slidev-exported.pdf",
+                "download": f"https://xryuseix.github.io/lt/{folder}/slidev-exported.pdf",
                 "update": update_time,
             }
         )
