@@ -1,0 +1,33 @@
+/** @format */
+
+#slide-content {
+  @apply text-white bg-off-black;
+  font-family: "Kiwi Maru", serif;
+}
+
+svg {
+  display: inline-block;
+}
+
+.under-left {
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+}
+
+.under-right {
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+}
+
+.comment {
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+  font-size: 0.7em;
+}
+
+div {
+  line-height:30px;
+}
