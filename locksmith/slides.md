@@ -15,10 +15,8 @@ download: true
   * 物理鍵と電子鍵
 * 鍵の種類の紹介
 * ピンタンブラー錠の仕組み
-* ディスクシリンダー錠の仕組み
 * ピッキング
   * ピンタンブラー錠のピッキング
-  * ディスクシリンダー錠のピッキング
 * ピッキング対策
   * 結局何使えばいいの？
 * 興味を持った人へ
@@ -100,21 +98,15 @@ download: true
 </div>
 
 ---
-
 layout: image-right
 image: /padlock.jpg
-
 ---
 
 # 今回話すこと
 
 1. 鍵の種類の紹介
-2. 鍵の仕組み
-   1. ピンタンブラー錠の仕組み
-   2. ディスクシリンダー錠の仕組み
+2. ピンタンブラー錠の仕組み
 3. ピッキング
-   1. ピンタンブラー錠のピッキング
-   2. ディスクシリンダー錠のピッキング
 4. ピッキング対策
 5. 興味を持った人へ
 6. Q & A
@@ -167,7 +159,7 @@ image: /padlock.jpg
     -webkit-text-stroke: 2px black;
     font-size: 2.4em;
     margin: 10px;
-    color: black;             /*文字を透明にする*/
+    color: black;
     background-clip: text;          /*背景を文字で切り抜く*/
     background-image : linear-gradient(45deg,
         red,
@@ -180,3 +172,144 @@ image: /padlock.jpg
     );
   }
 </style>
+
+---
+
+# 1. 鍵の種類の紹介
+
+## 物理鍵
+
+<table class="table">
+  <tr>
+    <td class="table-img">
+      <a href="https://www.miwa-lock.co.jp/lock_day/lineup/cylinder/subbnr/hole1.gif">
+        玄関錠<img src="/hole.png" class="table-img-content">
+      </a>
+    </td>
+    <td class="table-img">
+      <a href="https://content.misumi-ec.com/image/upload/t_popover_main/v1/p/jp/product/series/223300463137/223300463137_001.jpg">
+        ダイヤル錠<img src="/dial.jpeg" class="table-img-content">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td class="table-img">
+      <a href="https://www.kk-alpha.com/cp/img/img_alpha11.jpg">
+        八万ロック錠<img src="/hatiman.jpeg" class="table-img-content">
+      </a>
+    </td>
+    <td class="table-img">
+      <a href="https://www.kagi110qq.co.jp/test_com/img/works/img_31.png">
+        金庫のダイヤル錠<img src="/kotei_dial.png" class="table-img-content">
+      </a>
+    </td>
+  </tr>
+</table>
+
+<style>
+  .table-img-content {
+    display: block; margin: auto;
+  }
+  img {
+    height: 9.5em;
+  }
+</style>
+
+---
+
+# 1. 鍵の種類の紹介
+
+## 今回話す錠前について
+
+<div class="flex">
+  <div class="flex-grow">
+    <br />ピンタンブラー錠
+    <img src="/padlock_ana.jpg"  class="table-img-content"/>
+  </div>
+  <div class="flex-grow">
+    <br />ディスクシリンダー錠
+    <a href="https://www.miwa-lock.co.jp/lock_day/lineup/cylinder/subbnr/hole1.gif">
+      <img src="/hole.png" class="table-img-content">
+    </a>
+  </div>
+</div>
+
+<style>
+  .flex {
+    font-size: 1.2em;
+  }
+  .table-img-content {
+    display: block;
+    margin: auto;
+  }
+  img {
+    height: 14em;
+  }
+</style>
+
+---
+
+# 2. ピンタンブラー錠の仕組み
+
+<div style="height: 85%">
+  <a href="https://www.alsok.co.jp/person/keystory/09/">
+    <img src="/padlock_yoko.png" style="height: 100%; display: block; margin: auto;"/>
+  </a>
+</div>
+
+---
+
+# 2. ピンタンブラー錠の仕組み
+
+<table class="table">
+  <tr>
+    <td class="table-img">
+      <a href="https://ja.wikipedia.org/wiki/ピンタンブラー錠">
+        1.何もさしていない状態<img src="/padlock_no_key.png" class="table-img-content">
+      </a>
+    </td>
+    <td class="table-img">
+      <a href="https://ja.wikipedia.org/wiki/ピンタンブラー錠">
+        2.違う鍵をさした状態<img src="/padlock_bad_key.png" class="table-img-content">
+      </a>
+    </td>
+  </tr>
+  <tr>
+    <td class="table-img">
+      <a href="https://ja.wikipedia.org/wiki/ピンタンブラー錠">
+        3.合鍵をさした状態<img src="/padlock_with_key.png" class="table-img-content">
+      </a>
+    </td>
+    <td class="table-img">
+      <a href="https://ja.wikipedia.org/wiki/ピンタンブラー錠">
+        4.合鍵で回した状態<img src="/padlock_unlocked.png" class="table-img-content">
+      </a>
+    </td>
+  </tr>
+</table>
+
+<style>
+  .table-img-content {
+    display: block; margin: auto;
+  }
+  img {
+    height: 9.5em;
+  }
+</style>
+
+---
+
+# 2. ピンタンブラー錠の仕組み
+
+<video controls>
+  <source src="/padlock_skeleton.mp4" type="video/mp4">
+</video>
+
+---
+
+# 3. ピッキング
+
+<video controls>
+  <source src="/padlock_pick.mp4" type="video/mp4">
+</video>
+
