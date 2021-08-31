@@ -27,10 +27,10 @@ download: true
 * 想定Q&A
 -->
 
-# <mdi-lock /> 南京錠の仕組みと開け方
+# <mdi-lock /> 物理鍵の仕組みと開け方
 
 <div style="margin-left:5em">
-ピンタンブラー錠の仕組みと開け方を <b>超簡単に</b> 紹介
+物理鍵の仕組みと開け方を <b>超簡単に</b> 紹介
 </div>
 <div class="under-right">
 <mdi-arrow-down-bold-outline />詳しく資料が見たい方はこちら！
@@ -141,9 +141,9 @@ image: /padlock.jpg
     <br />
     <br />
     CTF でも暗号分野でよく使われています．<br />
-    ところで，今日は裏で <br />
+    ところで，今日は <br />
     <div class="gaming">TsukuCTF</div>
-    が開催されています．僕も数問提供しています．
+    が併催されています．僕も数問提供しています．
   </div>
   <div class="flex-grow summer">
     <img src="/summer.jpeg"/>
