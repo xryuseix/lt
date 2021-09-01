@@ -226,12 +226,6 @@ image: /padlock.jpg
     <br />ピンタンブラー錠
     <img src="/padlock_ana.jpg"  class="table-img-content"/>
   </div>
-  <div class="flex-grow">
-    <br />ディスクシリンダー錠
-    <a href="https://www.miwa-lock.co.jp/lock_day/lineup/cylinder/subbnr/hole1.gif">
-      <img src="/hole.png" class="table-img-content">
-    </a>
-  </div>
 </div>
 
 <style>
@@ -313,3 +307,188 @@ image: /padlock.jpg
   <source src="/padlock_pick.mp4" type="video/mp4">
 </video>
 
+---
+
+# 3. ピッキング
+
+<h2>前提知識</h2>
+
+<div style="height: 80%">
+ <img src="/padlock_center.png" style="height: 100%; display: block; margin: auto;"/>
+</div>
+
+<div class="comment">
+  ところで，一人暮らしで撮影しながら作業するのは大変でした．ピッキングは両手必要ですからね，足で撮影してました．<span style="font-size:0.5em">夏の風物詩・鬱クワガタ！w</span>
+</div>
+
+---
+
+# 3. ピッキング
+
+<h2>前提知識</h2>
+
+<div style="height: 85%">
+ <img src="/padlock_open.png" style="height: 100%; display: block; margin: auto;"/>
+</div>
+
+---
+
+# 3. ピッキング
+
+<h2>道具</h2>
+
+
+
+<div class="flex">
+  <div class="flex-grow">
+    <ul>
+      <li>テンション(上の棒)</li>
+      <li>ピック(下の棒)</li>
+    </ul>
+  </div>
+  <div class="flex-grow" style="width: 30%;margin-right: 40px;">
+    <img src="/dougu.jpg"/>
+  </div>
+</div>
+
+注意: 特殊開錠用具所持禁止法より，この工具は所持自体が違法です！！！  
+(僕は鍵師資格を所持しています)
+
+---
+
+# 3. ピッキング
+
+<h2>開け方の手順</h2>
+
+<div style="height: 75%">
+ <img src="/pick.jpg" style="height: 100%; display: block; margin: auto;"/>
+</div>
+
+注意: 特殊開錠用具所持禁止法より，この工具は所持自体が違法です！！！  
+(僕は鍵師資格を所持しています)
+
+---
+
+# 3. ピッキング
+
+<h2>なぜ開くのか</h2>
+
+<div class="flex">
+  <div class="flex-grow">
+    <ol>
+      <li>テンションをかけると上ピンが内筒と外筒の間に引っかかる</li>
+      <li>引っかかった状態で下ピンをピックで軽く押すと，<br>上ピンが下に落ちて来なくなる</li>
+      <li>下ピンは引っかかることなく，重力でおちる</li>
+      <li>シェアラインが揃う！</li>
+    </ol>
+  </div>
+  <div class="flex-grow">
+    <img src="/pick_naname.jpg" style="width: 15em"/>
+    <img src="/pick_naname2.jpg" style="width: 15em"/>
+    <a href="http://s-akademeia.sakura.ne.jp/main/books/lock/">
+    画像: ハッカーの学校 鍵開けの教科書 P176
+    </a>
+  </div>
+</div>
+
+---
+
+# 3. ピッキング
+
+<video controls>
+  <source src="/padlock_pick.mp4" type="video/mp4">
+</video>
+
+---
+
+# 3. ピッキング
+
+<video controls>
+  <source src="/pick_fast.mp4" type="video/mp4">
+</video>
+
+---
+
+# 4. ピッキング対策
+
+## そんな簡単に開いたら困るだろ！！！！！！
+
+つまり
+
+<h2><mdi-arrow-right-bold-outline />南京錠はDES暗号みたいなものです</h2>
+
+専門知識を持った人はすぐ開く，そうではない人は開かない．
+
+<h2><mdi-arrow-right-bold-outline />特に玄関錠はちゃんとしてないと困る！！！</h2>
+
+空いたら困るだと，あとは金庫とかね．金庫は今回話しませんが，簡単なものは20分くらいで開きます．  
+(南京錠と比べるとかなり難しい)
+
+---
+
+# 4. ピッキング対策
+
+## 4-1. ピン数を増やす / ピンの位置をずらす
+
+<div style="height: 85%">
+  <a href="https://www.rrrmaji.com/data/rrrrr/product/20170118_ed250f.png">
+    <img src="/goalv18.jpeg" style="height: 100%; display: block; margin: auto;"/>
+  </a>
+</div>
+
+---
+
+# 4. ピッキング対策
+
+## 4-2. アンチピッキングピン
+
+<div class="flex">
+  <div class="flex-grow">
+    <br />普通のピン
+    <img src="/normal_pin.png" class="table-img-content" style="height: 100%"/>
+  </div>
+  <div class="flex-grow">
+    <br />異形ピン
+    <img src="/ikei_pin.png" class="table-img-content" style="height: 100%"/>
+  </div>
+</div>
+
+---
+
+# 4. ピッキング対策
+
+## 4-2. アンチピッキングピン
+
+<div class="flex">
+  <div class="flex-grow" style="width: 45%; margin-right: 10px">
+    <br />画像: ハッカーの学校 鍵開けの教科書 P186
+    <img src="/anti_pick.jpg" class="table-img-content" style="width: 100%"/>
+  </div>
+  <div class="flex-grow" style="width: 45%">
+    <br />異形ピン
+    <img src="/ikei_pin.png" class="table-img-content" style="width: 100%"/>
+  </div>
+</div>
+<div class="comment">
+  ↑鍵開けの教科書わかりやすくない？？全人類買いましょう^^
+</div>
+
+---
+
+# 4. ピッキング対策
+
+## これまでの対策は初歩の初歩です
+
+<br />
+
+* 今の玄関錠はこの何倍も開きにくくなる対策をいっぱいしてます．
+* 破錠(ドリリング)対策もしてます．
+* なので開かないです(開く場合もありますが)．
+
+<h2>一番の対策は空き巣に入るときに</h2>
+<h2 style="text-align:center;margin: 10px;">「開けるのめんどくせえな」「他の家にしよう」</h2>
+<h2 style="text-align:right">と思わせることです．</h2>
+
+<div class="comment">
+  なんとしても玄関を開けたいと思われるような<b>豪邸にお住みの方</b>，至急ご連絡ください．叙々苑にいきましょう．
+</div>
