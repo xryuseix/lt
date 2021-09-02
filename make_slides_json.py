@@ -15,7 +15,7 @@ def main():
         and folder[0] != "."
         and folder not in utils.ng_folder_list
     ]
-    slides_dict = []
+    slides = []
     for folder in lt_folders:
         # ファイル更新日取得
         path = pathlib.Path(f"./{folder}/slides.md")
@@ -25,7 +25,7 @@ def main():
         # ファイルのタイトル取得
         slidesmd = utils.read_file(f"./{folder}/slides.md")
         title = re.search(r"title: ?(.*)(\r\n|\r|\n)?", slidesmd).group(1)
-        slides_dict.append(
+        slides.append(
             {
                 "id": folder,
                 "title": title,
@@ -34,7 +34,12 @@ def main():
                 "update": update_time,
             }
         )
-    utils.write_file("./src/assets/slides.json", json.dumps(slides_dict, indent=2))
+    slides = sorted(
+        slides,
+        reverse=True,
+        key=lambda slide: datetime.datetime.strptime(slide["update"], "%Y/%m/%d %H:%M"),
+    )
+    utils.write_file("./src/assets/slides.json", json.dumps(slides, indent=2))
     print("[LT] slides.json is updated!")
 
 
