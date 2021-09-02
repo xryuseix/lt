@@ -35,6 +35,7 @@ def main():
             }
         )
     utils.write_file("./src/assets/slides.json", json.dumps(slides_dict, indent=2))
+    print("[LT] slides.json is updated!")
 
 
 if __name__ == "__main__":
