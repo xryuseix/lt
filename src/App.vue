@@ -6,8 +6,15 @@
   </p>
   <LTList />
   <div class="icons">
-    <a href="https://github.com/xryuseix/lt"><img src="./assets/github.png"/></a
-    ><a href="https://xryuseix.github.io"
+    <a
+      href="https://github.com/xryuseix/lt"
+      target="_blank"
+      rel="noopener noreferrer"
+      ><img src="./assets/github.png"/></a
+    ><a
+      href="https://xryuseix.github.io"
+      target="_blank"
+      rel="noopener noreferrer"
       ><img src="./assets/xryuseix.png"
     /></a>
   </div>
