@@ -33,7 +33,6 @@ jobs:
           python -m pip install --upgrade pip
       - name: Build
         run: |
-          python make_slides_json.py
           if [ -d dist ]; then
               rm -rf dist/*
           else
