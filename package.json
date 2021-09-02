@@ -6,7 +6,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "precommit": "python3 make_slides_json.py && git add src/assets/slides.json"
+    "prepare": "husky install"
   },
   "dependencies": {
     "@vue/cli-service": "~4.5.0",

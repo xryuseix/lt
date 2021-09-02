@@ -1,0 +1,5 @@
+#!/bin/sh
+. "$(dirname "$0")/_/husky.sh"
+
+python3 $(dirname "$0")/../make_slides_json.py
+git add $(dirname "$0")/../src/assets/slides.json
