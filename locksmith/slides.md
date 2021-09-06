@@ -108,8 +108,7 @@ image: /padlock.jpg
 2. ピンタンブラー錠の仕組み
 3. ピッキング
 4. ピッキング対策
-5. 興味を持った人へ
-6. Q & A
+5. 興味を持った方へ
 
 <div class="under-left">
 画像: <a href="https://ja.wikipedia.org/wiki/南京錠">https://ja.wikipedia.org/wiki/南京錠</a>
@@ -139,8 +138,15 @@ image: /padlock.jpg
   </div>
   <div class="flex-grow summer">
     <img src="/summer.jpeg"/>
-    <div class="under-right">画像: 映画サマーウォーズ</div>
+    画像: 映画サマーウォーズ
   </div>
+</div>
+
+<div class="under-right">
+  <a href="https://tsukuctf.sechack365.com">
+    <img src="/tsukuctf.png" />
+    https://tsukuctf.sechack365.com/
+  </a>
 </div>
 
 <style>
@@ -170,6 +176,10 @@ image: /padlock.jpg
         blue,
         purple
     );
+  }
+  .under-right img {
+    height: 10em;
+    margin: auto;
   }
 </style>
 
@@ -327,8 +337,12 @@ image: /padlock.jpg
 
 <h2>前提知識</h2>
 
-<div style="height: 85%">
+<div style="height: 80%">
  <img src="/padlock_open.png" style="height: 100%; display: block; margin: auto;"/>
+</div>
+
+<div class="comment">
+  ところで，一人暮らしで撮影しながら作業するのは大変でした．ピッキングは両手必要ですからね，足で撮影してました．<span style="font-size:0.5em">夏の風物詩・鬱クワガタ！w</span>
 </div>
 
 ---
@@ -421,7 +435,7 @@ image: /padlock.jpg
 
 <h2><mdi-arrow-right-bold-outline />特に玄関錠はちゃんとしてないと困る！！！</h2>
 
-空いたら困るだと，あとは金庫とかね．金庫は今回話しませんが，簡単なものは20分くらいで開きます．  
+空いたら困るシリーズだと，あとは金庫とかね．金庫は今回話しませんが，簡単なものは20分くらいで開きます．  
 (南京錠と比べるとかなり難しい)
 
 ---
@@ -443,11 +457,11 @@ image: /padlock.jpg
 ## 4-2. アンチピッキングピン
 
 <div class="flex">
-  <div class="flex-grow">
+  <div class="flex-grow" style="width: 45%; margin-right: 10px">
     <br />普通のピン
     <img src="/normal_pin.png" class="table-img-content" style="height: 100%"/>
   </div>
-  <div class="flex-grow">
+  <div class="flex-grow" style="width: 45%">
     <br />異形ピン
     <img src="/ikei_pin.png" class="table-img-content" style="height: 100%"/>
   </div>
@@ -485,10 +499,112 @@ image: /padlock.jpg
 * 破錠(ドリリング)対策もしてます．
 * なので開かないです(開く場合もありますが)．
 
-<h2>一番の対策は空き巣に入るときに</h2>
+<h2>一般人の一番の対策は空き巣に入るときに</h2>
 <h2 style="text-align:center;margin: 10px;">「開けるのめんどくせえな」「他の家にしよう」</h2>
 <h2 style="text-align:right">と思わせることです．</h2>
 
 <div class="comment">
   なんとしても玄関を開けたいと思われるような<b>豪邸にお住みの方</b>，至急ご連絡ください．叙々苑にいきましょう．
 </div>
+
+---
+
+# 4. ピッキング対策
+
+## じゃあ玄関にはどの鍵使えばいいの？
+
+<div class="flex">
+  <div class="flex-grow">
+    <br />
+    とりま MIWA U9 を使っておけばおk<br />
+    (まあ鍵屋さん行って)
+    <br />
+    <ul>
+      <li>ピッキングは絶対に無理</li>
+      <li>破錠も厳しい(時間がかかる)</li>
+      <li>↑場合によっては壁突き破った方が楽</li>
+    </ul>
+  </div>
+  <div style="height: 85%">
+    <a href="http://www.kagiyasan.jp/img/item/common/cylinder/MIWA/U9-MCY-136_2.jpg">
+      <img src="/miwau9.jpeg" style="height: 100%; display: block; margin: auto;"/>
+    </a>
+  </div>
+</div>
+
+---
+
+# 5. 興味を持った方へ
+
+## 入門はとりあえずこれが良き
+
+<div class="flex">
+  <div class="flex-grow" style="text-align: center;">
+    <a href="http://s-akademeia.sakura.ne.jp/main/books/lock/">
+    <img src="kagiake_cover.png" style="height: 65%; display: block; margin: auto;"/>
+    ハッカーの学校 鍵開けの教科書
+    </a>
+  </div>
+</div>
+
+---
+
+# 5. 興味を持った方へ
+
+## ピッキング(実技)も知りたい
+
+<div class="flex">
+  <div class="flex-grow" style="text-align: center;">
+    <img src="youtube.png" style="height: 60%; display: block; margin: auto;"/>
+    Youtubeで「ピッキング 鍵」とかで検索 <span style="font-size:0.8em">(<code>鍵</code>がないとギターが出てくる)</span>
+  </div>
+</div>
+
+---
+
+# 5. 興味を持った方へ
+
+## ピッキングしてみたい
+
+<div class="flex">
+  <div class="flex-grow" style="width: 100em">
+    <br />
+    鍵師として働くための講習が受けられます
+    <ul>
+      <li>ピッキング</li>
+      <li>合鍵作成</li>
+      <li>シリンダー交換</li>
+    </ul>
+    など
+  </div>
+  <div class="flex-grow" style="text-align: center;">
+    <img src="kagisi.png" style="height: 85%; display: block; margin: auto;"/>
+    僕の場合，講習代+試験代+交通費+飲食費=15,6万くらいでした
+  </div>
+</div>
+
+---
+
+# 6. 最後に
+
+<div class="text">
+  物理 & サイバー ハッキングを<br />
+  是非両方やってみませんか？？？
+</div>
+
+<div class="under-right">
+  以上！ご静聴ありがとうございました！！
+</div>
+
+<style>
+.text {
+  width: 90%;
+  text-align: center;
+  font-size: 2em;
+  line-height: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+</style>
