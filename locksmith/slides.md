@@ -1,29 +1,10 @@
 ---
 theme: default
 highlighter: shiki
-title: 物理鍵の仕組みと開け方[作成中]
+title: 物理鍵の仕組みと開け方
 colorSchema: dark
 download: true
 ---
-
-<!-- @format -->
-
-<!--
-[内容]
-* 導入
-  * 自己紹介
-  * 物理鍵と電子鍵
-* 鍵の種類の紹介
-* ピンタンブラー錠の仕組み
-* ピッキング
-  * ピンタンブラー錠のピッキング
-* ピッキング対策
-  * 結局何使えばいいの？
-* 興味を持った人へ
-  * 鍵師の紹介
-  * 鍵師講座の紹介
-* 想定Q&A
--->
 
 # <mdi-lock /> 物理鍵の仕組みと開け方
 
@@ -110,7 +91,7 @@ image: /padlock.jpg
 4. ピッキング対策
 5. 興味を持った方へ
 
-<div class="under-left">
+<div class="under-left comment">
 画像: <a href="https://ja.wikipedia.org/wiki/南京錠">https://ja.wikipedia.org/wiki/南京錠</a>
 </div>
 
