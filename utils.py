@@ -73,6 +73,7 @@ ng_folder_list = [
     ".github",
     "dist",
     ".dist",
+    ".husky",
     "public",
     "node_modules",
     "src",
