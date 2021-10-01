@@ -15,7 +15,7 @@ download: true
 <mdi-arrow-down-bold-outline />詳しく資料が見たい方はこちら！
   <a href=https://xryuseix.github.io/lt/locksmith>
     <img src="/qrcode.png" />
-    https://xryuseix.github.io/lt/locksmith
+    https://xryuseix.github.io/lt/locksmithzz
   </a>
 </div>
 
@@ -522,7 +522,7 @@ image: /padlock.jpg
 <div class="flex">
   <div class="flex-grow" style="text-align: center;">
     <a href="http://s-akademeia.sakura.ne.jp/main/books/lock/">
-    <img src="kagiake_cover.png" style="height: 65%; display: block; margin: auto;"/>
+    <img src="/kagiake_cover.png" style="height: 65%; display: block; margin: auto;"/>
     ハッカーの学校 鍵開けの教科書
     </a>
   </div>
@@ -536,7 +536,7 @@ image: /padlock.jpg
 
 <div class="flex">
   <div class="flex-grow" style="text-align: center;">
-    <img src="youtube.png" style="height: 60%; display: block; margin: auto;"/>
+    <img src="/youtube.png" style="height: 60%; display: block; margin: auto;"/>
     Youtubeで「ピッキング 鍵」とかで検索 <span style="font-size:0.8em">(<code>鍵</code>がないとギターが出てくる)</span>
   </div>
 </div>
@@ -559,7 +559,7 @@ image: /padlock.jpg
     など
   </div>
   <div class="flex-grow" style="text-align: center;">
-    <img src="kagisi.png" style="height: 85%; display: block; margin: auto;"/>
+    <img src="/kagisi.png" style="height: 85%; display: block; margin: auto;"/>
     僕の場合，講習代+試験代+交通費+飲食費=15,6万くらいでした
   </div>
 </div>
