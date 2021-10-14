@@ -25,28 +25,33 @@ def main():
     # 準備とか
     assert os.path.exists("dist"), f"[ERROR] dist is not found"
 
+    dist_files = utils.ls("dist")
+    for file in dist_files:
+        utils.rm(f"dist/{file}")
+
     lt_folders = [
         folder
-        for folder in utils.ls(utils.pwd())
-        if os.path.isdir(folder)
+        for folder in utils.ls(f"{utils.pwd()}/slides")
+        if os.path.isdir(f"{utils.pwd()}/slides/{folder}")
         and folder[0] != "."
-        and folder not in utils.ng_folder_list
     ]
-
+    
     # ビルド
+    utils.cd("slides")
     for folder in lt_folders:
-        utils.cd(folder)
+        utils.cd(f"{folder}")
         _ = subprocess.run(["yarn", "install"])
         _ = subprocess.run(["yarn", "run", "build", "--base", f"/lt/{folder}/"])
         if os.path.exists(f"{utils.pwd()}/{folder}/dist"):
             print(f"[ERROR] build failed! ({folder})")
         utils.cd("..")
+    utils.cd("..")
 
-    # ファイルのコピー
+    # ファイルのコピーと HTML 作成
     root_path = utils.pwd()
     utils.cd("dist")
     for folder in lt_folders:
-        utils.cp(f"{root_path}/{folder}/dist", f"{utils.pwd()}/{folder}")
+        utils.cp(f"{root_path}/slides/{folder}/dist", f"{utils.pwd()}/{folder}")
         utils.cd(folder)
         # 絶対パスの修正
         # index.html の href, src

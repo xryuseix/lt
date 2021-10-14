@@ -11,5 +11,5 @@
     "@slidev/theme-seriph": "*",
     "playwright-chromium": "^1.13.1"
   },
-  "name": "github-100days"
+  "name": "padlock"
 }

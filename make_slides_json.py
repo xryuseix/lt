@@ -10,20 +10,19 @@ import utils
 def main():
     lt_folders = [
         folder
-        for folder in utils.ls(utils.pwd())
+        for folder in utils.ls(f"{utils.pwd()}/slides")
         if os.path.isdir(folder)
         and folder[0] != "."
-        and folder not in utils.ng_folder_list
     ]
     slides = []
     for folder in lt_folders:
         # ファイル更新日取得
-        path = pathlib.Path(f"./{folder}/slides.md")
+        path = pathlib.Path(f"./slides/{folder}/slides.md")
         date = datetime.datetime.fromtimestamp(path.stat().st_ctime)
         update_time = date.strftime("%Y/%m/%d %H:%M")
 
         # ファイルのタイトル取得
-        slidesmd = utils.read_file(f"./{folder}/slides.md")
+        slidesmd = utils.read_file(f"./slides/{folder}/slides.md")
         title = re.search(r"title: ?(.*)(\r\n|\r|\n)?", slidesmd).group(1)
         slides.append(
             {

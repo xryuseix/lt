@@ -67,18 +67,3 @@ def write_file(path: str, content: str):
 def read_file(path: str):
     with open(path) as f:
         return f.read()
-
-
-ng_folder_list = [
-    ".github",
-    "dist",
-    ".dist",
-    "images",
-    ".husky",
-    "public",
-    "node_modules",
-    "src",
-    ".vscode",
-    "__pycache__",
-    "images"
-]

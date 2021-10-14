@@ -159,7 +159,7 @@
     "@slidev/types" "0.22.7"
     js-yaml "^4.1.0"
 
-"@slidev/theme-default@*":
+"@slidev/theme-default@^0.19.1":
   version "0.19.1"
   resolved "https://registry.yarnpkg.com/@slidev/theme-default/-/theme-default-0.19.1.tgz#2862091deca5bab84d148f92f93d9f603edc0527"
   integrity sha512-SB98kdLzFevpKONZcIla5byQdTiIqaf+jKJi8Shy0pxUDT+aMpkfKq1yudgjnN9yt7E/NH7xB9menZHQov0zDw==
