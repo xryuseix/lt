@@ -25,7 +25,7 @@ def main():
     # 準備とか
     assert os.path.exists("dist"), f"[ERROR] dist is not found"
 
-    if sys.argv[1] == "--test" or sys.argv[1] == "-t":
+    if len(sys.argv) > 1 and (sys.argv[1] == "--test" or sys.argv[1] == "-t"):
         dist_files = utils.ls("dist")
         for file in dist_files:
             utils.rm(f"dist/{file}")
