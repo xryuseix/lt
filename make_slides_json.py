@@ -11,7 +11,7 @@ def main():
     lt_folders = [
         folder
         for folder in utils.ls(f"{utils.pwd()}/slides")
-        if os.path.isdir(folder)
+        if os.path.isdir(f"{utils.pwd()}/slides/{folder}")
         and folder[0] != "."
     ]
     slides = []
