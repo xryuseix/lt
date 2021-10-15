@@ -8,3 +8,41 @@
 svg {
   display: inline-block;
 }
+
+.under-left {
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+}
+
+.under-right {
+  position: absolute;
+  bottom: 2%;
+  right: 1%;
+}
+
+.comment {
+  position: absolute;
+  bottom: 2%;
+  left: 1%;
+  font-size: 0.7em;
+}
+
+div {
+  line-height:30px;
+}
+
+.center-text {
+  width: 90%;
+  text-align: center;
+  font-size: 2.2em;
+  line-height: 1.5em;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translateY(-50%) translateX(-50%);
+}
+
+.center {
+  text-align: center;
+}
