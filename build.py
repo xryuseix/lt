@@ -1,7 +1,7 @@
 import os
-import subprocess
-
+import sys
 import utils
+import subprocess
 
 ### その他の関数 ###
 
@@ -25,17 +25,17 @@ def main():
     # 準備とか
     assert os.path.exists("dist"), f"[ERROR] dist is not found"
 
-    dist_files = utils.ls("dist")
-    for file in dist_files:
-        utils.rm(f"dist/{file}")
+    if sys.argv[1] == "--test" or sys.argv[1] == "-t":
+        dist_files = utils.ls("dist")
+        for file in dist_files:
+            utils.rm(f"dist/{file}")
 
     lt_folders = [
         folder
         for folder in utils.ls(f"{utils.pwd()}/slides")
-        if os.path.isdir(f"{utils.pwd()}/slides/{folder}")
-        and folder[0] != "."
+        if os.path.isdir(f"{utils.pwd()}/slides/{folder}") and folder[0] != "."
     ]
-    
+
     # ビルド
     utils.cd("slides")
     for folder in lt_folders:
