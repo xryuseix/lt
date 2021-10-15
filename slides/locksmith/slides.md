@@ -15,7 +15,7 @@ download: true
 <mdi-arrow-down-bold-outline />詳しく資料が見たい方はこちら！
   <a href=https://xryuseix.github.io/lt/locksmith>
     <img src="/qrcode.png" />
-    https://xryuseix.github.io/lt/locksmithzz
+    https://xryuseix.github.io/lt/locksmith
   </a>
 </div>
 
