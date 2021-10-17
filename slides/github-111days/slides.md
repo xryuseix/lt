@@ -14,7 +14,7 @@ download: true
 111日間毎日プログラムを書く方法と結果
 </div>
 <div class="under-right">
-  <a href=https://xryuseix.github.io/lt/locksmith>
+  <a href="https://xryuseix.github.io/lt/github-111days">
     <img src="/qrcode.png" />
     https://xryuseix.github.io/lt/github-111days
   </a>
@@ -55,7 +55,7 @@ download: true
 <div class="flex-grow">
 
 <div class="qrcode under-right">
-  <a href=https://xryuseix.github.io/lt/locksmith>
+  <a href="https://xryuseix.github.io/lt/github-111days">
     <img src="/qrcode.png" />
   </a>
 </div>
@@ -70,7 +70,7 @@ download: true
 
 <br />
 
-- 言語 <mdi-arrow-right-bold-outline /> <logos-c-plusplus /> C++, <logos-rust style="background:white"/> Rust, <logos-python /> Python
+- 言語 <mdi-arrow-right-bold-outline /> <logos-c-plusplus /> C++, <logos-rust style="background:white"/> Rust, <carbon-logo-python /> Python
   <img src="https://camo.githubusercontent.com/37eb24996c3cae0fe6b7b804e6bcb32f2141e5bdffbdeecaf046ff64244fc5a9/68747470733a2f2f6769746875622d726561646d652d73746174732e76657263656c2e6170702f6170692f746f702d6c616e67733f757365726e616d653d7872797573656978266c61796f75743d636f6d70616374266c616e67735f636f756e743d3130266578636c7564655f7265706f3d53412d506c61672c4174436f6465725f4261636b75702c5365634861636b3336352d446174617365742c26686964653d68746d6c2c4d616b6566696c652c6373732c5465782c434d616b652c534353532c43267468656d653d746f6b796f6e69676874" style="height:10em" />
 - エディタ <mdi-arrow-right-bold-outline /> <vscode-icons-file-type-vscode /> VSCode
 - OS <mdi-arrow-right-bold-outline /> <mdi-apple /> macOS (M1)
@@ -121,14 +121,14 @@ img {
 
 - 自分のポートフォリオサイトの機能開発とリファクタリング (<logos-javascript /> <logos-react /> <logos-gatsby /> <logos-vue />)
 - 競プロ用ストレステストツール (<logos-rust style="background:white"/>)
-- フィッシングサイト判定 chrome 拡張 (<logos-python /> <logos-javascript />)
-- 自宅用監視カメラ (<logos-python /> <logos-opencv />)
+- フィッシングサイト判定 chrome 拡張 (<carbon-logo-python /> <logos-javascript />)
+- 自宅用監視カメラ (<carbon-logo-python /> <logos-opencv />)
 - 仕事用業務効率化ツール  (<logos-rust style="background:white"/>)
-- 文章構成ツール (<logos-python />)
-- Spotify cli ツール (<logos-python />)
+- 文章構成ツール (<carbon-logo-python />)
+- Spotify cli ツール (<carbon-logo-python />)
 - 暗号化ツール (<logos-rust style="background:white"/>)
-- zoom のバーチャル背景を剥がすツール (<logos-c-plusplus /> <logos-python /> <logos-opencv />)
-- ReDoS やられサイト(CTF 用) (<logos-python /> <logos-flask style="background:white" />)
+- zoom のバーチャル背景を剥がすツール (<logos-c-plusplus /> <carbon-logo-python /> <logos-opencv />)
+- ReDoS やられサイト(CTF 用) (<carbon-logo-python /> <logos-flask style="background:white" />)
 - その他，<b>複数のレポジトリの</b>リファクタリングとドキュメント作成
 - ...
 
@@ -167,13 +167,14 @@ div {
 
 <div class="flex">
   <div class="flex-grow">
-    <h2>ProofLeader (<logos-python />)</h2>
+    <h2>ProofLeader (<carbon-logo-python />)</h2>
     <br />
     <ul>
       <li>文章の校正 (Formatter) を行う</li>
       <li>競プロ問題作成において共通して使用可能</li>
       <li>定期的に"フォーマット状態"の仕様が変わってる</li>
-      <li>既知のバグがめっちゃある</li>
+      <li><s>既知のバグがめっちゃある</s></li>
+      <li>↑最近結構治った</li>
     </ul>
   </div>
   <div class="flex-grow" style="width: 45%; margin-right: 40px;">
@@ -181,6 +182,12 @@ div {
       <img src="/proofleader.png" style="height: 100%; display: block; margin: auto;"/>
     </a>
   </div>
+</div>
+
+<div class="under-left">
+  <a href="https://github.com/xryuseix/ProofLeader">
+    https://github.com/xryuseix/ProofLeader
+  </a>
 </div>
 
 ---
@@ -405,13 +412,13 @@ div {
 
 <br />
 
-| 時間             | 内容                                           |
-| :--------------- | :--------------------------------------------- |
-| 10:00 ごろ       | 起床                                           |
-| 10:00~15:00 ごろ | 大学 (ここで今夜の実装内容を考えとく)          |
-| ~18:00           | サークル・課題など                             |
-| ~24:00           | 実装のための勉強<small>(\*1)</small>・趣味など |
-| 24:00~2:00       | <span class="big">今日のプログラミング<small>(\*2)</small></span>       |
+| 時間             | 内容                                                              |
+| :--------------- | :---------------------------------------------------------------- |
+| 10:00 ごろ       | 起床                                                              |
+| 10:00~15:00 ごろ | 大学 (ここで今夜の実装内容を考えとく)                             |
+| ~18:00           | サークル・課題など                                                |
+| ~24:00           | 実装のための勉強<small>(\*1)</small>・趣味など                    |
+| 24:00~2:00       | <span class="big">今日のプログラミング<small>(\*2)</small></span> |
 
 <br />
 
@@ -432,17 +439,6 @@ div {
   font-size: 1.4em;
 }
 </style>
-
----
-
-# (2) 毎日プログラムを書き続けるコツ - 計画
-
-<div class="center-text">
-  <ol>
-    <li>知識を増やさず新しいコードは書けない</li>
-    <li>今日の commit は昨日やっておく</li>
-  </ol>
-</div>
 
 ---
 
@@ -525,7 +521,9 @@ div {
 </div>
 
 <div class="comment">
-  https://www.kaonavi.jp/dictionary/mandalart/
+  <a href="https://www.kaonavi.jp/dictionary/mandalart/">
+    https://www.kaonavi.jp/dictionary/mandalart/
+  </a>
 </div>
 
 <style>
@@ -596,9 +594,14 @@ img {
 
 <div class="center-text">
   プログラミングを習慣化することが上達への近道<br />
-  続けるためには「モチベ・根性・計画」が必要<br />
+  <mdi-arrow-right-bold-outline />「モチベ・根性・計画」が必要<br />
   目標は正しく設定して，成果は記録する
 </div>
+
 <div class="comment">
 This slide was created by Slidev
+</div>
+
+<div class="under-right">
+Thank you for listening!
 </div>
